@@ -1,0 +1,34 @@
+function init()
+  self.deltas = {0,0}
+  self.hyp = 1
+  self.setFacingDirection = nil
+  self.energyPerSecond = (config.getParameter("energyCostPerSecond") / 60);
+  self.activetimer = 0
+  end
+function update(args,dt)
+	if self.deltas[1] <= 0 then
+		self.setFacingDirection = 1;
+	else
+		self.setFacingDirection = -1;
+	end
+    mcontroller.controlParameters({
+    })
+	local myMousePos =  tech.aimPosition()
+	local amIColliding = mcontroller.isColliding()
+	local myVelocity = mcontroller.velocity()
+	self.deltas = world.distance(mcontroller.position(), tech.aimPosition())
+	self.hyp = math.sqrt((self.deltas[1] ^ 2) + (self.deltas[2] ^ 2))
+	mcontroller.controlFace(self.setFacingDirection)
+	if not mcontroller.onGround() and args.moves["jump"] then
+		mcontroller.setVelocity({-(self.deltas[1] / self.hyp * 15), -(self.deltas[2] / self.hyp * 15)})
+		if args.moves["up"] and args.moves["jump"]then
+				if status.overConsumeResource("energy", self.energyPerSecond * 2 ) then
+					mcontroller.setVelocity({-(self.deltas[1] / self.hyp * 50), -(self.deltas[2] / self.hyp * 50)})
+				end
+
+			end
+			if not args.moves["run"] or ( args.moves["left"] and args.moves["right"] ) then
+				mcontroller.setVelocity({-(self.deltas[1] / self.hyp * 0), -(self.deltas[2] / self.hyp * 0)})
+			end
+		end
+end
