@@ -1,0 +1,19 @@
+{
+	"name" : "dragonbless",
+	"type" : "legs",
+
+	"scripts" : ["dragonbless.lua"],
+	"animator" : "dragonbless.animation",
+
+	"description" : "^#B3E3E5;The skies belong to you, ^white;but for a price. ^orange;Flight^white; is free, but a ^green;dash^white; consumes energy. UP + SPACEBAR to dash, SPACEBAR in mid air to fly, and SHIFT to stop.",
+	"shortDescription" : "The Wings of The Dragons",
+	"rarity" : "Legendary",
+	"icon" : "/tech/dragonbless/dragonbless.png",
+
+	"chipCost" : 32,
+	"energyCostPerSecond" : 25
+	"chargeTime" : 1.6,
+	"boostTime" : 0.10,
+	"boostSpeed" : 12,
+	"boostForce" : 400
+}

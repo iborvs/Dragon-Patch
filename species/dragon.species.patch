@@ -1,0 +1,14 @@
+[{
+    "op": "replace", 
+    "path": "/charCreationTooltip/description" , 
+    "value": "马纳利亚的大家就由我来守护。
+    
+    ^red;虚弱：40%毒素，寒气抗性^reset;
+    ^green;40%火炎抗性，20% 物理抗性^reset;
+    ^green;免疫：燃烧，炎热^reset;
+    ^green;在炎热生态中，获得额外15%的生命值和移动速度^reset;
+    ^red;在寒冷生态中，减少25%的生命值，减少10%的移动速度^reset;
+    ^green;非凡的空中灵活性。^reset;
+    矛/武士刀/长剑：+^green;20%暴击伤害^reset;
+    狙击步枪/弓：+^green;20%暴击率^reset;"
+}]

@@ -1,0 +1,17 @@
+{
+  "name" : "dragonspower",
+  "effectConfig" : {
+    "drainMultiplier" : 0.2,
+    "cooldown" : 0.5
+  },
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "dragonspower.lua"
+  ],
+
+  "animationConfig" : "drain.animation",
+
+  "label" : "Dragon's Power - drain enemy health on hits.",
+  "icon" : "/interface/statuses/absorb.png"
+}

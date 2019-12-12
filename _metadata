@@ -1,0 +1,12 @@
+{
+  "author" : "iborvs",
+  "description" : "dragon patch!",
+  "friendlyName" : "[TEST!]dragon patch",
+  "includes" : ["FrackinRaces"],
+  "link" : "steam://url/CommunityFilePage/1653145837",
+  "name" : "[TEST!]dragon patch",
+  "priority" : 10001,
+  "steamContentId" : "1653145837",
+  "tags" : "Character Improvements",
+  "version" : "0.15"
+}

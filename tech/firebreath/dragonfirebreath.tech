@@ -1,0 +1,19 @@
+{
+	"name" : "dragonfirebreath",
+	"type" : "head",
+
+	"scripts" : ["dragonfirebreath.lua"],
+	"animator" : "dragonfirebreath.animation",
+
+	"description" : "You have the blessing of dragons; You have their breath. Press ^green;F ^white;to ^red;breathe fire.",
+	"shortDescription" : "Fire Breath",
+	"rarity" : "Legendary",
+	"icon" : "/tech/firebreath/dragonfirebreath.png",
+
+	"chipCost" : 16,
+  "techProjectileConfig": {
+    "power": 0.5,
+    "speed": 75 
+  },
+	"energyCostPerSecond" : 20
+}
